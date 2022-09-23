@@ -38,12 +38,13 @@ function Home() {
                         <Text
                             bgGradient='linear(to-l, #7928CA, #FF0080)'
                             bgClip='text'
-                            fontSize='6xl'
                             fontWeight='extrabold'
+                            fontSize="6xl"
                         >
                             Mooble
                         </Text>
                     </div>
+                    <Text textAlign='center' marginBottom='20px' fontSize="2xl">The Powerful Movie Search Engine</Text>
                     <div className="col col-11 col-xs-11 col-sm-11 col-md-12 col-lg-12 col-xl-12">
                         <form className='d-flex justify-content-center align-items-center flex-column gap-2' onSubmit={handleSubmit}>
                             <Input placeholder='Search Movie...' name='search' size='md' width='100%' onChange={(e) => handleChange(e)} />

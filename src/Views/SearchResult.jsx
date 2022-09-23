@@ -36,7 +36,7 @@ function SearchResult() {
         ) : (
             <>
                 <div className="d-flex flex-column gap-2 align-items-center">
-                    <Image src={movie?.data?.Poster} alt='Movie Poster' borderRadius="10px" />
+                    <Image src={movie?.data?.Poster} alt='Movie Poster' borderRadius="10px" className='poster'/>
                     <Text fontSize='sm'>Poster: {movie?.data?.Title} ({movie?.data?.Year})</Text>
                 </div>
             </>
@@ -46,10 +46,12 @@ function SearchResult() {
         <>
             {
                 movie?.data?.Response === "False" ? (
+                    <div className="container mt-3">
                     <Alert status='error'>
                         <AlertIcon />
                         {movie?.data?.Error}
                     </Alert>
+                    </div>
                 ) : (
                     <div className="container">
                         <div className="row mt-4 row-customized">

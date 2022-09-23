@@ -35,15 +35,15 @@ export default function DetailsTab({ data, status }) {
               <FaImdb size="30px" />
               <Text fontSize='md'>{data?.imdbRating}/10 ({data?.imdbVotes} Votes)</Text>
             </div>
-            <Text fontSize='md'>Released: {data?.Released || noData}</Text>
-            <Text fontSize='md'>DVD: {data?.DVD || noData}</Text>
-            <Text fontSize='md'>Runtime: {data?.Runtime || noData}</Text>
-            <Text fontSize='md'>Director: {data?.Director || noData}</Text>
-            <Text fontSize='md'>Writer: {data?.Writer || noData}</Text>
-            <Text fontSize='md'>Actors: {data?.Actors || noData}</Text>
-            <Text fontSize='md'>Box Office: {data?.BoxOffice || noData}</Text>
-            <Text fontSize='md'>Language: {data?.Language || noData}</Text>
-            <Text fontSize='md'>Country: {data?.Country || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Released: {data?.Released || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">DVD: {data?.DVD || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Runtime: {data?.Runtime || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Director: {data?.Director || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Writer: {data?.Writer || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Actors: {data?.Actors || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Box Office: {data?.BoxOffice || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Language: {data?.Language || noData}</Text>
+            <Text fontSize='md' marginBottom="3px">Country: {data?.Country || noData}</Text>
           </>
         )
       }
